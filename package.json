@@ -4,6 +4,7 @@
   "description": "react, redux, and webpack (but mostly webpack practice, hence the name)",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --inline --content-base ./app",
     "prod": "webpack -p",
     "dev": "webpack-dev-server"
   },
@@ -14,14 +15,19 @@
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "6.16.0",
     "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.17.0",
     "html-webpack-plugin": "^2.22.0",
+    "redux-devtools-extension": "^1.0.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.2"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "15.3.2",
     "react-dom": "15.3.2",
+    "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
+    "redux": "^3.6.0",
     "webpack-dev-server": "1.16.1"
   }
 }
