@@ -1,5 +1,7 @@
-export const test = () => {
+export const toggleItem = (round, word) => {
   return {
-    type: 'TEST',
+    type: 'TOGGLE_ITEM',
+    round,
+    word,
   };
 };

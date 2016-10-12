@@ -1,4 +1,4 @@
 Social Games by VINCEF UTD
 =================
 
-Test project
+To run in Dev mode: ```npm start```

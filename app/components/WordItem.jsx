@@ -1,26 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import classNames from 'classnames';
 
-export default class WordItem extends Component {
-
-  state = {
-    isClicked: false,
-  };
-
-  toggleItem() {
-    console.log('clicked');
-    this.setState({
-      isClicked: !this.state.isClicked,
-    });
-  }
+class WordItem extends Component {
 
   render() {
-    const { id, word } = this.props;
-    const { isClicked } =  this.state;
+    const { id, word, onClick, hidden } = this.props;
 
-    const btnClass = classNames('btn btn-default btn-large', { 'clicked': isClicked });
-    
+    const btnClass = classNames('btn btn-default btn-large', { 'clicked': hidden });
+
     return (
       <li
         className='col-xs-2'
@@ -29,12 +18,23 @@ export default class WordItem extends Component {
         }}
         >
         <button
-          onClick={this.toggleItem.bind(this)}
+          onClick={onClick.bind(this)}
           className={btnClass}
           >
-          {isClicked ? word : id}
+          {hidden ? id : word}
         </button>
       </li>
     );
   }
 }
+
+export default connect(
+  (state, ownProps) => {
+    return {
+      id: ownProps.id,
+      word: ownProps.word,
+      onClick: ownProps.onClick,
+      hidden: ownProps.hidden,
+    };
+  }
+)(WordItem);
