@@ -23,7 +23,7 @@ class Main extends React.Component {
       switch (key) {
         case 'ArrowRight':
           // Go next
-          if (thisRound < this.props.totalRounds) {
+          if (thisRound < this.props.totalRounds[thisGame-1]) {
             nextRound = thisRound + 1;
           } else {
             return null;
@@ -135,14 +135,16 @@ class Main extends React.Component {
 Main.propTypes = {
   children: React.PropTypes.node,
   totalGames: React.PropTypes.number,
-  totalRounds: React.PropTypes.number,
 };
 
 export default connect(
   (state) => {
     return {
       totalGames: 2,
-      totalRounds: state.game1.get('sentences').toJS().length,
+      totalRounds: [
+        state.game1.get('sentences').toJS().length,
+        state.game2.get('songs').toJS().length,
+      ]
     }
   }
 )(Main);

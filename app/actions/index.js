@@ -5,3 +5,10 @@ export const toggleItem = (round, word) => {
     word,
   };
 };
+
+export const correctGuess = (songId) => {
+  return {
+    type: 'CORRECT_GUESS',
+    songId,
+  }
+};

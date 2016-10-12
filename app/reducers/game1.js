@@ -1,5 +1,7 @@
+import { fromJS } from 'immutable';
+
 const game1 = (
-  state = [],
+  state = fromJS({}),
   action
 ) => {
   switch (action.type) {
