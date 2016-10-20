@@ -4,8 +4,10 @@ const Game = (props) => {
   const game = parseInt(props.params.game);
 
   return (
-    <div className="text-center">
-      <h1>Game {game}</h1>
+    <div className="jumbotron vertical-center">
+      <h1 className="text-center">
+        Game {game}
+      </h1>
     </div>
   );
 };

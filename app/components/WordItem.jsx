@@ -13,12 +13,16 @@ export default class WordItem extends Component {
       <li
         className='col-xs-2'
         style={{
-          float: 'left'
+          float: 'left',
+          padding: 20,
         }}
         >
         <button
           onClick={onClick.bind(this)}
           className={btnClass}
+          style={{
+            fontSize: 20,
+          }}
           >
           {hidden ? id : word}
         </button>

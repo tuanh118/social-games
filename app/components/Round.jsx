@@ -11,7 +11,6 @@ class Round extends Component {
   }
 
   componentDidMount() {
-    console.log('did mount');
     this.setState({
       removeInterval: setInterval(this.countdown, 100),
     });
@@ -68,7 +67,9 @@ class Round extends Component {
             )}
           </ul>
           <div className="jumbotron col-xs-12">
-            <h1>{hiddenWords[selectedWordId] ? null : words[selectedWordId]}</h1>
+            <h1 className="text-center">
+              {hiddenWords[selectedWordId] ? null : words[selectedWordId]}
+            </h1>
           </div>
         </div>
 
@@ -95,9 +96,14 @@ class Round extends Component {
     }
 
     return (
-      <div>
-        <h3 className='col-xs-12'>Round {round}</h3>
-        <div className='col-xs-10 col-xs-offset-1'>
+      <div className="jumbotron">
+        <h1 className="text-center col-xs-12">Round {round}</h1>
+        <div
+          style={{
+            padding: 100,
+          }}
+          className="col-xs-10 col-xs-offset-1"
+        >
           {roundContent}
         </div>
       </div>

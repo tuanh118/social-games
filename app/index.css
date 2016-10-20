@@ -12,3 +12,19 @@ html, .main-container, .btn, .jumbotron {
   background-color: white;
   color: black;
 }
+
+.btn-large {
+  min-height: 11vh;
+}
+
+.vertical-center {
+  min-height: 90%;
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+}

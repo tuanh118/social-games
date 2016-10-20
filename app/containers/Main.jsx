@@ -144,7 +144,8 @@ export default connect(
       totalRounds: [
         state.game1.get('sentences').toJS().length,
         state.game2.get('songs').toJS().length,
-      ]
+      ],
+      lastRoundId: state.general.get('lastRoundId'),
     }
   }
 )(Main);

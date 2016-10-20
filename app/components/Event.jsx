@@ -1,13 +1,11 @@
 import React from 'react';
 
-class Event extends React.Component {
-  render() {
-    return (
-      <div className="text-center">
-        <h1>Karaoke Night</h1>
-      </div>
-    );
-  }
-}
+const Event = () => (
+  <div className="jumbotron vertical-center">
+    <h1 className="text-center">
+      Karaoke Night
+    </h1>
+  </div>
+);
 
 export default Event;
