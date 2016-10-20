@@ -35,51 +35,51 @@ const songs = [
   },
   {
     title: 'We don\'t have to take our clothes off',
-    imgUrl: '',
+    imgUrl: 'http://img.cache.vevo.com/Content/VevoImages/video/96A537C70A64F9426E7081D2B446E6892015112164830318.jpg',
   },
   {
     title: 'Edge of Glory',
-    imgUrl: '',
+    imgUrl: 'https://images.rapgenius.com/30838b5a9099c358d4ac5302b5df87b5.800x454x1.jpg',
   },
   {
     title: 'How Deep Is Your Love',
-    imgUrl: '',
+    imgUrl: 'https://i.ytimg.com/vi/jP5iI8eLlfk/maxresdefault.jpg',
   },
   {
     title: 'Halo',
-    imgUrl: '',
+    imgUrl: 'https://inspirationoflyric.files.wordpress.com/2009/03/ohhellyes-beyonce-halo.jpg',
   },
   {
     title: 'Pretty Boy',
-    imgUrl: '',
+    imgUrl: 'http://music.mthai.com/wp-content/uploads/2016/02/M2M.jpg',
   },
   {
     title: 'De Gio Cuon Di',
-    imgUrl: '',
+    imgUrl: 'http://i214.photobucket.com/albums/cc72/delta38_1/TrinhCongSon.jpg',
   },
   {
     title: 'Let Her Go',
-    imgUrl: '',
+    imgUrl: 'https://f4.bcbits.com/img/a0093276483_16.jpg',
   },
   {
     title: 'Toxic',
-    imgUrl: '',
+    imgUrl: 'https://upload.wikimedia.org/wikipedia/en/2/21/Britney_Spears_Toxic.png',
   },
   {
     title: 'Royals',
-    imgUrl: '',
+    imgUrl: 'http://www.clubdancemixes.com/wp-content/uploads/2013/10/royals-lorde.jpg',
   },
   {
     title: 'Chandelier',
-    imgUrl: '',
+    imgUrl: 'https://i.ytimg.com/vi/Iv8Df437ptw/hqdefault.jpg',
   },
   {
     title: 'Thrift Shop',
-    imgUrl: '',
+    imgUrl: 'http://images.younghouselove.com/2013/01/Macklemore-Challenge.jpg',
   },
   {
     title: 'Hello Vietnam',
-    imgUrl: '',
+    imgUrl: 'http://hopamviet.vn/assets/images/editor/Bonjour%20VN1.png',
   },
 ];
 
