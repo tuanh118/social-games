@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 import classNames from 'classnames';
 
-class WordItem extends Component {
+export default class WordItem extends Component {
 
   render() {
     const { id, word, onClick, hidden } = this.props;
@@ -27,14 +26,3 @@ class WordItem extends Component {
     );
   }
 }
-
-export default connect(
-  (state, ownProps) => {
-    return {
-      id: ownProps.id,
-      word: ownProps.word,
-      onClick: ownProps.onClick,
-      hidden: ownProps.hidden,
-    };
-  }
-)(WordItem);

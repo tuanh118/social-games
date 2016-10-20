@@ -26,9 +26,12 @@ const hidden = sentences.map(
   sentence => sentence.trim().split(' ').map(word => true)
 );
 
+const selectedWordId = sentences.map(sentence => '');
+
 const game1 = fromJS({
   sentences,
   hidden,
+  selectedWordId,
 });
 
 const songs = [
@@ -53,7 +56,63 @@ const songs = [
     imgUrl: 'https://tipsytirade.files.wordpress.com/2015/10/il_570xn-419793334_f48r.jpg',
   },
   {
+    title: 'Tiny Dancer',
+    imgUrl: 'https://upload.wikimedia.org/wikipedia/en/3/37/Elton_John_Tiny_Dancer.jpg',
+  },
+  {
     title: 'Heart skips a beat',
+    imgUrl: 'http://991.com/NewGallery/Lenka+Heart+Skips+A+Beat+534831.jpg',
+  },
+  {
+    title: 'Fly me to the moon',
+    imgUrl: 'https://uxfactor.files.wordpress.com/2013/10/fly-me-to-the-moon.png',
+  },
+  {
+    title: 'We don\'t have to take our clothes off',
+    imgUrl: '',
+  },
+  {
+    title: 'Edge of Glory',
+    imgUrl: '',
+  },
+  {
+    title: 'How Deep Is Your Love',
+    imgUrl: '',
+  },
+  {
+    title: 'Halo',
+    imgUrl: '',
+  },
+  {
+    title: 'Pretty Boy',
+    imgUrl: '',
+  },
+  {
+    title: 'De Gio Cuon Di',
+    imgUrl: '',
+  },
+  {
+    title: 'Let Her Go',
+    imgUrl: '',
+  },
+  {
+    title: 'Toxic',
+    imgUrl: '',
+  },
+  {
+    title: 'Royals',
+    imgUrl: '',
+  },
+  {
+    title: 'Chandelier',
+    imgUrl: '',
+  },
+  {
+    title: 'Thrift Shop',
+    imgUrl: '',
+  },
+  {
+    title: 'Hello Vietnam',
     imgUrl: '',
   },
 ];

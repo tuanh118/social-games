@@ -6,7 +6,9 @@ const game1 = (
 ) => {
   switch (action.type) {
     case 'TOGGLE_ITEM':
-      return state.updateIn(['hidden', action.round, action.word], x => !x);
+      return state
+        .updateIn(['hidden', action.round, action.word], x => !x)
+        .setIn(['selectedWordId', action.round], action.word);
     default:
       return state;
   }

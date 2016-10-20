@@ -1,27 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import Game1 from './Game1';
-import Game2 from './Game2';
+const Game = (props) => {
+  const game = parseInt(props.params.game);
 
-class Game extends Component {
-  getGameContent(game) {
-    switch (game) {
-      case 1:
-        return <Game1 />;
-      case 2:
-        return <Game2 />;
-      default:
-        return null;
-    }
-  }
-
-  render() {
-    const content = this.getGameContent(parseInt(this.props.params.game));
-
-    return (
-      <div>{ content }</div>
-    );
-  }
+  return (
+    <div className="text-center">
+      <h1>Game {game}</h1>
+    </div>
+  );
 };
 
 export default Game;

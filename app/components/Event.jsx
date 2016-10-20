@@ -3,7 +3,7 @@ import React from 'react';
 class Event extends React.Component {
   render() {
     return (
-      <div>
+      <div className="text-center">
         <h1>Karaoke Night</h1>
       </div>
     );

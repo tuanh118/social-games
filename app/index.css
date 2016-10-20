@@ -1,4 +1,4 @@
-html, .main-container, .btn {
+html, .main-container, .btn, .jumbotron {
   background-color: black;
   color: white;
 }
