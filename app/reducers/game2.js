@@ -35,7 +35,7 @@ const songs = [
   },
   {
     title: 'We don\'t have to take our clothes off',
-    imgUrl: 'http://img.cache.vevo.com/Content/VevoImages/video/96A537C70A64F9426E7081D2B446E6892015112164830318.jpg',
+    imgUrl: 'https://i.ytimg.com/vi/1zwy2a_Nunc/hqdefault.jpg',
   },
   {
     title: 'Edge of Glory',
@@ -43,7 +43,7 @@ const songs = [
   },
   {
     title: 'How Deep Is Your Love',
-    imgUrl: 'https://i.ytimg.com/vi/jP5iI8eLlfk/maxresdefault.jpg',
+    imgUrl: 'http://www.heroarrangements.com/wp-content/uploads/2014/12/BeeGees-HowDeep.jpg',
   },
   {
     title: 'Halo',

@@ -51,7 +51,7 @@ class Round extends Component {
       roundContent = (
         <div className="row">
           <ul
-            className="col-xs-12"
+            className="col-md-12"
             style={{
               listStyle: 'none'
             }}
@@ -66,7 +66,7 @@ class Round extends Component {
                 />
             )}
           </ul>
-          <div className="jumbotron col-xs-12">
+          <div className="jumbotron col-md-12">
             <h1 className="text-center">
               {hiddenWords[selectedWordId] ? null : words[selectedWordId]}
             </h1>
@@ -82,14 +82,29 @@ class Round extends Component {
 
       roundContent = (
         <div className="row">
-          <h1 className="col-xs-12">
-            {milisecondsLeft}
-          </h1>
-          <div className="col-xs-2">
-            {song.get('title')}
+          <div
+            className="col-md-8"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <img
+              src={song.get('imgUrl')}
+              style={{
+                maxHeight: '70vh',
+                maxWidth: '70vh',
+              }}
+            />
           </div>
-          <div className="col-xs-10">
-            <img src={song.get('imgUrl')} />
+          <div className="col-md-4">
+            <h1 className="col-md-12">
+              {milisecondsLeft}
+            </h1>
+            <h2 className="col-md-12">
+              {song.get('title')}
+            </h2>
           </div>
         </div>
       );
@@ -97,12 +112,14 @@ class Round extends Component {
 
     return (
       <div className="jumbotron">
-        <h1 className="text-center col-xs-12">Round {round}</h1>
+        <h1 className="text-center col-md-12">Round {round}</h1>
         <div
           style={{
-            padding: 100,
+            paddingTop: 50,
+            paddingLeft: 100,
+            paddingRight: 100,
           }}
-          className="col-xs-10 col-xs-offset-1"
+          className="col-md-10 col-md-offset-1"
         >
           {roundContent}
         </div>

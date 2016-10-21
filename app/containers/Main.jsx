@@ -67,8 +67,8 @@ class Main extends React.Component {
           // Go to game list
           return '/';
         case 'ArrowDown':
-          // Go into the first round
-          nextRound = 1;
+          // Go into the first round or most recently visited one
+          nextRound = this.props.lastRoundIds.get(params.game);
           break;
         default:
           return null;
@@ -77,8 +77,8 @@ class Main extends React.Component {
       // Event level (top level)
       switch (key) {
         case 'ArrowDown':
-          // Go into the first game
-          nextGame = 1;
+          // Go into the first game or most recently visited one
+          nextGame = this.props.lastGameId;
           break;
         default:
           return null;
@@ -145,7 +145,8 @@ export default connect(
         state.game1.get('sentences').toJS().length,
         state.game2.get('songs').toJS().length,
       ],
-      lastRoundId: state.general.get('lastRoundId'),
+      lastGameId: state.general.get('lastGameId'),
+      lastRoundIds: state.general.get('lastRoundIds'),
     }
   }
 )(Main);
